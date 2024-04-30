@@ -2,35 +2,29 @@ const getDesignTokens = mode => ({
    direction: 'rtl',
 
    typography: {
-      // fontFamily: 'almaraiRegular',
+      fontFamily: 'kalamehMedium500',
    },
 
    palette: {
       mode,
 
-      // primary: {
-      //    main: '#65a5fc',
-      // },
-      // customPink: {
-      //    main: '#FD8266',
-      // },
+      primary: {
+         main: '#2ED7FE',
+      },
    },
 
    components: {
       MuiButton: {
          styleOverrides: {
-            root: props => ({
-               // boxShadow: 'none',
-               // textTransform: 'none',
-               // padding: 0,
-               // minWidth: 0,
-               // borderRadius: 0,
-               // ...(props?.ownerState?.color === 'customPink' && {
-               //    color: '#fff',
-               // }),
-               // '&:hover': {
-               //    boxShadow: 'none',
-               // },
+            root: () => ({
+               boxShadow: 'none',
+               textTransform: 'none',
+               padding: 0,
+               minWidth: 0,
+               borderRadius: 0,
+               '&:hover': {
+                  boxShadow: 'none',
+               },
             }),
          },
       },
@@ -38,7 +32,7 @@ const getDesignTokens = mode => ({
       MuiDialog: {
          styleOverrides: {
             root: {
-               // fontFamily: 'almaraiRegular',
+               fontFamily: 'kalamehMedium500',
             },
          },
       },
@@ -46,7 +40,22 @@ const getDesignTokens = mode => ({
       MuiDrawer: {
          styleOverrides: {
             root: {
-               // fontFamily: 'almaraiRegular',
+               fontFamily: 'kalamehMedium500',
+            },
+         },
+      },
+
+      MuiFab: {
+         styleOverrides: {
+            root: {
+               boxShadow: 'none',
+               zIndex: 1,
+               padding: 0,
+               minWidth: 0,
+               borderRadius: 0,
+               minHeight: 0,
+               width: 'auto',
+               height: 'auto',
             },
          },
       },

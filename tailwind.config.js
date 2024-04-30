@@ -24,17 +24,29 @@ module.exports = {
          },
 
          colors: {
-            // customPink: '#FFA3A1',
+            primaryBlue: '#2ED7FE',
          },
 
          fontFamily: {
-            // dana: 'dana',
+            kalamehThin100: 'kalamehThin100',
+            kalamehExtraLight200: 'kalamehExtraLight200',
+            kalamehLight300: 'kalamehLight300',
+            kalamehRegular400: 'kalamehRegular400',
+            kalamehMedium500: 'kalamehMedium500',
+            kalamehSemiBold600: 'kalamehSemiBold600',
+            kalamehBold700: 'kalamehBold700',
+            kalamehExtraBold800: 'kalamehExtraBold800',
+            kalamehBlack900: 'kalamehBlack900',
          },
          borderRadius: {
             10: '10px',
          },
          fontSize: {
             10: '10px',
+            eighteen: '18px',
+            15: '15px',
+         },
+         padding: {
             eighteen: '18px',
          },
       },

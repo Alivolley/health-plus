@@ -9,13 +9,11 @@ function PagesLayout({ children }) {
    const { pathname } = useRouter();
 
    return (
-      <div
-      //  className="font-almaraiRegular"
-      >
+      <div className="font-kalamehMedium500" dir="rtl">
          <RtlProvider>
             {pathname !== '/login' && <Header />}
 
-            <main>{children}</main>
+            <main className="mt-[110px] customMd:mt-[150px]">{children}</main>
 
             {pathname !== '/login' && <Footer />}
          </RtlProvider>

@@ -51,7 +51,7 @@ function AppLayout({ children }) {
             <Toaster
                position="top-right"
                toastOptions={{
-                  style: { fontFamily: 'almaraiRegular', fontSize: '14px', direction: 'rtl' },
+                  style: { fontFamily: 'kalamehMedium500', fontSize: '14px', direction: 'rtl' },
                   duration: 4000,
                }}
             >
