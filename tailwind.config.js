@@ -49,6 +49,9 @@ module.exports = {
          padding: {
             eighteen: '18px',
          },
+         margin: {
+            eighteen: '18px',
+         },
       },
    },
    plugins: [],

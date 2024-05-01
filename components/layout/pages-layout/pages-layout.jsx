@@ -13,7 +13,7 @@ function PagesLayout({ children }) {
          <RtlProvider>
             {pathname !== '/login' && <Header />}
 
-            <main className="mt-[110px] customMd:mt-[150px]">{children}</main>
+            <main className="mt-[120px] customMd:mt-[150px]">{children}</main>
 
             {pathname !== '/login' && <Footer />}
          </RtlProvider>
