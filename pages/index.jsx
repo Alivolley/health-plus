@@ -5,6 +5,7 @@ import HomeCounseling from '@/components/pages/home/home-counseling/home-counsel
 import NewestBlogs from '@/components/pages/home/newest-blogs/newest-blogs';
 import SuggestedDoctors from '@/components/pages/home/suggested-doctors/suggested-doctors';
 import SuggestedPsychologists from '@/components/pages/home/suggested-psychologists/suggested-psychologists';
+import WhyUs from '@/components/pages/home/why-us/why-us';
 
 export default function Home() {
    return (
@@ -15,6 +16,7 @@ export default function Home() {
          <SuggestedPsychologists />
          <HomeBanner2 />
          <NewestBlogs />
+         <WhyUs />
       </div>
    );
 }
