@@ -11,15 +11,14 @@ import homeBannerTurn from '@/assets/images/homeBannerTurn.png';
 import homeBannerPharmacy from '@/assets/images/homeBannerPharmacy.png';
 import homeBannerCounseling from '@/assets/images/homeBannerCounseling.png';
 
-function HomeBanner() {
+function HomeBanner1() {
    const isDesktop = useMediaQuery(`(min-width: 900px)`);
 
    return (
       <div className="px-eighteen customMd:px-[90px]">
          <div className="mx-auto max-w-[1260px]">
-            <div className="relative aspect-[1/0.5] w-full customMd:h-[262px]">
-               <Image src={isDesktop ? banner1Desktop : banner1Mobile} alt="banner" fill className="rounded-[38px]" />
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={isDesktop ? banner1Desktop.src : banner1Mobile.src} alt="banner" className="w-full" />
 
             <div className="mt-eighteen customMd:mt-[45px]">
                <div>
@@ -89,4 +88,4 @@ function HomeBanner() {
    );
 }
 
-export default HomeBanner;
+export default HomeBanner1;
