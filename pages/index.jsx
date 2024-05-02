@@ -9,7 +9,7 @@ import WhyUs from '@/components/pages/home/why-us/why-us';
 
 export default function Home() {
    return (
-      <div>
+      <div className="pb-[25px] customMd:pb-[150px]">
          <HomeBanner1 />
          <SuggestedDoctors />
          <HomeCounseling />
