@@ -35,7 +35,7 @@ function Header() {
                      <Image src={logoPic} alt="logo" className="size-full" />
                   </Link>
                   <div className="flex items-center gap-3 xl:gap-[37.5px]">
-                     <div id="dropdownWrapper" style={{ boxShadow: '0px 0px 15px 0px #0000000D' }}>
+                     <div id="dropdownWrapper">
                         <div
                            className="flex items-center gap-1 text-15 text-[#40404080] transition-all duration-200"
                            id="dropdownText"
@@ -125,7 +125,7 @@ function Header() {
                      <Link href="/" className="text-15 text-[#40404080]">
                         داروخانه
                      </Link>
-                     <div id="dropdownWrapper" style={{ boxShadow: '0px 0px 15px 0px #0000000D' }}>
+                     <div id="dropdownWrapper">
                         <div
                            className="flex items-center gap-1 text-15 text-[#40404080] transition-all duration-200"
                            id="dropdownText"

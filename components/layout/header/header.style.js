@@ -31,7 +31,7 @@ const HeaderStyle = styled.header(() => ({
       transition: 'all 0.3s',
       opacity: 0,
       visibility: 'hidden',
-      boxShadow: '0px 4px 20px 0px #A2A2A226',
+      boxShadow: '0px 0px 15px 0px #0000000D',
    },
 }));
 
