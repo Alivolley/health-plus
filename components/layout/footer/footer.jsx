@@ -1,7 +1,14 @@
+import { useState } from 'react';
 import Image from 'next/image';
 
+// MUI
+import { Button } from '@mui/material';
+
 // Icons
-import { FaInstagram, FaTelegram, FaWhatsapp, FaFacebook } from 'react-icons/fa';
+import { FaInstagram, FaTelegram, FaWhatsapp, FaFacebook, FaRegFileAlt } from 'react-icons/fa';
+import { GoHomeFill } from 'react-icons/go';
+import { BsChatSquareText } from 'react-icons/bs';
+import { AiOutlineUser } from 'react-icons/ai';
 
 // Assets
 import Link from 'next/link';
@@ -9,7 +16,19 @@ import logoPic from '@/assets/images/logo.png';
 import footerPic1 from '@/assets/images/footerPic1.png';
 import footerPic2 from '@/assets/images/footerPic2.png';
 
+const btnStyles = {
+   height: '24px',
+   borderRadius: '12px',
+   fontSize: '11px',
+   span: { margin: 0 },
+   gap: '4px',
+   whiteSpace: 'nowrap',
+   paddingX: '9px',
+};
+
 function Footer() {
+   const [chosenBtn, setChosenBtn] = useState(1);
+
    return (
       <footer>
          <div className="bg-[#CCCCCC0F] px-eighteen pb-[27px] pt-eighteen customMd:px-[90px] customMd:pb-[188px] customMd:pt-[112px]">
@@ -126,6 +145,53 @@ function Footer() {
          >
             کلیه حقوق مادی و معنوی این وبسایت متعلق به هلث پلاس میباشد
          </p>
+
+         <div className="fixed inset-x-0 bottom-0 flex items-center justify-between bg-white px-eighteen py-[13px] customMd:hidden">
+            <Button
+               startIcon={<GoHomeFill size="14px" />}
+               {...(chosenBtn === 1 && { variant: 'contained' })}
+               sx={{
+                  color: chosenBtn === 1 ? 'white' : '#70707080',
+                  ...btnStyles,
+               }}
+               onClick={() => setChosenBtn(1)}
+            >
+               خانه
+            </Button>
+            <Button
+               startIcon={<FaRegFileAlt size="14px" />}
+               {...(chosenBtn === 2 && { variant: 'contained' })}
+               sx={{
+                  color: chosenBtn === 2 ? 'white' : '#70707080',
+                  ...btnStyles,
+               }}
+               onClick={() => setChosenBtn(2)}
+            >
+               پرونده من
+            </Button>
+            <Button
+               startIcon={<BsChatSquareText size="14px" />}
+               {...(chosenBtn === 3 && { variant: 'contained' })}
+               sx={{
+                  color: chosenBtn === 3 ? 'white' : '#70707080',
+                  ...btnStyles,
+               }}
+               onClick={() => setChosenBtn(3)}
+            >
+               پیام ها
+            </Button>
+            <Button
+               startIcon={<AiOutlineUser size="14px" />}
+               {...(chosenBtn === 4 && { variant: 'contained' })}
+               sx={{
+                  color: chosenBtn === 4 ? 'white' : '#70707080',
+                  ...btnStyles,
+               }}
+               onClick={() => setChosenBtn(4)}
+            >
+               حساب من
+            </Button>
+         </div>
       </footer>
    );
 }

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -15,7 +16,12 @@ import logoPic from '@/assets/images/logo.png';
 // Styles
 import HeaderStyle from './header.style';
 
+// Components
+import MobileMenu from '../mobile-menu/mobile-menu';
+
 function Header() {
+   const [showMobileMenu, setShowMobileMenu] = useState(false);
+
    const formSubmitHandler = e => {
       e.preventDefault();
    };
@@ -29,44 +35,129 @@ function Header() {
                      <Image src={logoPic} alt="logo" className="size-full" />
                   </Link>
                   <div className="flex items-center gap-3 xl:gap-[37.5px]">
-                     <div id="dropdownWrapper">
-                        <div className="flex items-center gap-1 text-15 text-[#40404080]">
+                     <div id="dropdownWrapper" style={{ boxShadow: '0px 0px 15px 0px #0000000D' }}>
+                        <div
+                           className="flex items-center gap-1 text-15 text-[#40404080] transition-all duration-200"
+                           id="dropdownText"
+                        >
                            مشاور آنلاین
                            <MdOutlineKeyboardArrowDown id="dropdownArrow" className="transition-all duration-200" />
                         </div>
-                        <div id="dropdownBox">
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci laboriosam quod
-                           incidunt minus harum,
+                        <div
+                           id="dropdownBox"
+                           className="flex flex-col gap-5 rounded-10 border border-solid border-[#2ED7FE80] bg-white p-5"
+                        >
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              متخصص زنان و زایمان
+                           </Link>
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              متخصص داخلی
+                           </Link>
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              متخصص قلب و عروق
+                           </Link>
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              متخصص پوست و مو
+                           </Link>
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              متخصص روانپزشک
+                           </Link>
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              متخصص جراج
+                           </Link>
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              متخصص دندانپزشک
+                           </Link>
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              متخصص مغز و اعصاب
+                           </Link>
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              متخصص تغذیه
+                           </Link>
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              مشاهده تمام تخصص ها
+                           </Link>
                         </div>
                      </div>
-                     <div id="dropdownWrapper">
-                        <div className="flex items-center gap-1 text-15 text-[#40404080]">
-                           نوبت دهی
-                           <MdOutlineKeyboardArrowDown id="dropdownArrow" className="transition-all duration-200" />
-                        </div>
-                        <div id="dropdownBox">
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci laboriosam quod
-                           incidunt minus harum,
-                        </div>
-                     </div>
-                     <div id="dropdownWrapper">
-                        <div className="flex items-center gap-1 text-15 text-[#40404080]">
-                           داروخانه
-                           <MdOutlineKeyboardArrowDown id="dropdownArrow" className="transition-all duration-200" />
-                        </div>
-                        <div id="dropdownBox">
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci laboriosam quod
-                           incidunt minus harum,
-                        </div>
-                     </div>
-                     <div id="dropdownWrapper">
-                        <div className="flex items-center gap-1 text-15 text-[#40404080]">
+                     <Link href="/" className="text-15 text-[#40404080]">
+                        نوبت دهی
+                     </Link>
+                     <Link href="/" className="text-15 text-[#40404080]">
+                        داروخانه
+                     </Link>
+                     <div id="dropdownWrapper" style={{ boxShadow: '0px 0px 15px 0px #0000000D' }}>
+                        <div
+                           className="flex items-center gap-1 text-15 text-[#40404080] transition-all duration-200"
+                           id="dropdownText"
+                        >
                            پزشک در منزل
                            <MdOutlineKeyboardArrowDown id="dropdownArrow" className="transition-all duration-200" />
                         </div>
-                        <div id="dropdownBox">
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci laboriosam quod
-                           incidunt minus harum,
+                        <div
+                           id="dropdownBox"
+                           className="flex flex-col gap-5 rounded-10 border border-solid border-[#2ED7FE80] bg-white p-5"
+                        >
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              ویزیت پزشک در منزل
+                           </Link>
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              آزمایش در منزل
+                           </Link>
+                           <Link
+                              href="/"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                           >
+                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              پرستاری در منزل
+                           </Link>
                         </div>
                      </div>
                      <Link href="/" className="text-15 text-[#40404080]">
@@ -76,7 +167,11 @@ function Header() {
                </div>
 
                <div className="customLg:hidden">
-                  <Fab color="primary" sx={{ width: '21px', height: '21px', borderRadius: '6px' }}>
+                  <Fab
+                     color="primary"
+                     sx={{ width: '21px', height: '21px', borderRadius: '6px' }}
+                     onClick={() => setShowMobileMenu(true)}
+                  >
                      <Category size="15" color="#FFf" />
                   </Fab>
                </div>
@@ -139,6 +234,7 @@ function Header() {
                />
             </form>
          </div>
+         <MobileMenu open={showMobileMenu} onClose={() => setShowMobileMenu(false)} />
       </HeaderStyle>
    );
 }

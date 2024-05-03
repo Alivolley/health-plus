@@ -17,6 +17,10 @@ const HeaderStyle = styled.header(() => ({
       '&:hover #dropdownArrow': {
          transform: 'rotate(180deg)',
       },
+
+      '&:hover #dropdownText': {
+         color: '#2ED7FE',
+      },
    },
 
    '& #dropdownBox': {
