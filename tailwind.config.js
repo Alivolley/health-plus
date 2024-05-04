@@ -25,6 +25,9 @@ module.exports = {
 
          colors: {
             primaryBlue: '#2ED7FE',
+            textColor1: '#404040',
+            textColor2: '#40404080',
+            textColor3: '#404040BF',
          },
 
          fontFamily: {
@@ -40,6 +43,7 @@ module.exports = {
          },
          borderRadius: {
             10: '10px',
+            15: '15px',
          },
          fontSize: {
             10: '10px',
@@ -48,9 +52,11 @@ module.exports = {
          },
          padding: {
             eighteen: '18px',
+            15: '15px',
          },
          margin: {
             eighteen: '18px',
+            15: '15px',
          },
       },
    },

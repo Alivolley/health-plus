@@ -37,7 +37,7 @@ function Header() {
                   <div className="flex items-center gap-3 xl:gap-[37.5px]">
                      <div id="dropdownWrapper">
                         <div
-                           className="flex items-center gap-1 text-15 text-[#40404080] transition-all duration-200"
+                           className="flex items-center gap-1 text-15 text-textColor2 transition-all duration-200"
                            id="dropdownText"
                         >
                            مشاور آنلاین
@@ -49,85 +49,85 @@ function Header() {
                         >
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               متخصص زنان و زایمان
                            </Link>
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               متخصص داخلی
                            </Link>
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               متخصص قلب و عروق
                            </Link>
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               متخصص پوست و مو
                            </Link>
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               متخصص روانپزشک
                            </Link>
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               متخصص جراج
                            </Link>
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               متخصص دندانپزشک
                            </Link>
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               متخصص مغز و اعصاب
                            </Link>
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               متخصص تغذیه
                            </Link>
                            <Link
-                              href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              href="/online-medical-advice"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               مشاهده تمام تخصص ها
                            </Link>
                         </div>
                      </div>
-                     <Link href="/" className="text-15 text-[#40404080]">
+                     <Link href="/" className="text-15 text-textColor2">
                         نوبت دهی
                      </Link>
-                     <Link href="/" className="text-15 text-[#40404080]">
+                     <Link href="/" className="text-15 text-textColor2">
                         داروخانه
                      </Link>
                      <div id="dropdownWrapper">
                         <div
-                           className="flex items-center gap-1 text-15 text-[#40404080] transition-all duration-200"
+                           className="flex items-center gap-1 text-15 text-textColor2 transition-all duration-200"
                            id="dropdownText"
                         >
                            پزشک در منزل
@@ -139,28 +139,28 @@ function Header() {
                         >
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               ویزیت پزشک در منزل
                            </Link>
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               آزمایش در منزل
                            </Link>
                            <Link
                               href="/"
-                              className="flex items-center gap-[5px] whitespace-nowrap text-[#40404080] transition-all duration-200 hover:text-primaryBlue"
+                              className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
                               <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
                               پرستاری در منزل
                            </Link>
                         </div>
                      </div>
-                     <Link href="/" className="text-15 text-[#40404080]">
+                     <Link href="/" className="text-15 text-textColor2">
                         مجله سلامت
                      </Link>
                   </div>

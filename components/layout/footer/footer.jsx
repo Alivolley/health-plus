@@ -42,7 +42,7 @@ function Footer() {
                         </div>
 
                         <div className="mt-[9px] customMd:mt-[23px]">
-                           <p className="text-[7px] text-[#404040] max-customMd:text-center customMd:text-[19px]">
+                           <p className="text-[7px] text-textColor1 max-customMd:text-center customMd:text-[19px]">
                               با ما در ارتباط باشید
                            </p>
                            <div className="mt-[9px] flex items-center gap-[9px] max-customMd:justify-center customMd:mt-[23px] customMd:gap-[23px]">
@@ -85,8 +85,8 @@ function Footer() {
                   <div className="max-customMd:mb-[26px] max-customMd:mt-eighteen max-customMd:w-full customMd:flex-1">
                      <div className="flex justify-center gap-7 text-[7px] customMd:justify-end customMd:gap-[100px] customMd:text-[19px] customMd:leading-6">
                         <div>
-                           <p className="text-[#404040]">خدمات ما</p>
-                           <div className="mt-[7px] flex flex-col gap-[5px] text-[#40404080] customMd:mt-[22px] customMd:gap-3">
+                           <p className="text-textColor1">خدمات ما</p>
+                           <div className="mt-[7px] flex flex-col gap-[5px] text-textColor2 customMd:mt-[22px] customMd:gap-3">
                               <Link href="/" className="transition-all duration-200 hover:text-primaryBlue">
                                  پزشک عمومی
                               </Link>
@@ -105,8 +105,8 @@ function Footer() {
                            </div>
                         </div>
                         <div>
-                           <p className="text-[#404040]">هلث پلاس</p>
-                           <div className="mt-[7px] flex flex-col gap-[5px] text-[#40404080] customMd:mt-[22px] customMd:gap-3">
+                           <p className="text-textColor1">هلث پلاس</p>
+                           <div className="mt-[7px] flex flex-col gap-[5px] text-textColor2 customMd:mt-[22px] customMd:gap-3">
                               <Link href="/" className="transition-all duration-200 hover:text-primaryBlue">
                                  تماس با ما
                               </Link>
@@ -141,7 +141,7 @@ function Footer() {
          </div>
          <p
             className="bg-[#2ED7FE40] px-eighteen py-[7px] text-center text-[7px]
-          text-[#404040] customMd:px-[90px] customMd:py-[17px] customMd:text-[19px]"
+          text-textColor1 customMd:px-[90px] customMd:py-[17px] customMd:text-[19px]"
          >
             کلیه حقوق مادی و معنوی این وبسایت متعلق به هلث پلاس میباشد
          </p>

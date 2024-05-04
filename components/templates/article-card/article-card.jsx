@@ -22,7 +22,7 @@ function ArticleCard() {
          </div>
          <p
             className="mt-[9px] border-b border-dashed border-[#40404040] pb-[5px]
-          text-10 text-[#404040] customMd:mt-3 customMd:pb-[22.5px] customMd:text-eighteen"
+          text-10 text-textColor1 customMd:mt-3 customMd:pb-[22.5px] customMd:text-eighteen"
          >
             انواع گلودرد و درمان آن
          </p>

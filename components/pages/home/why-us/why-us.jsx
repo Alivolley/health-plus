@@ -10,11 +10,11 @@ function WhyUs() {
       <div className="mt-[27px] px-eighteen customMd:mt-[90px] customMd:px-[90px]">
          <div className="mx-auto max-w-[1260px]">
             <div>
-               <p className="text-center text-[19px] text-[#404040] max-customMd:hidden">چرا HealthPlus ؟</p>
-               <p className="mt-[11px] text-center font-kalamehRegular400 text-[19px] text-[#40404080] max-customMd:hidden">
+               <p className="text-center text-[19px] text-textColor1 max-customMd:hidden">چرا HealthPlus ؟</p>
+               <p className="mt-[11px] text-center font-kalamehRegular400 text-[19px] text-textColor2 max-customMd:hidden">
                   ارائه خدمات مشاوره تلفنی و متنی
                </p>
-               <p className="font-kalamehSemiBold600 text-sm text-[#404040] customMd:hidden">چرا HealthPlus ؟</p>
+               <p className="font-kalamehSemiBold600 text-sm text-textColor1 customMd:hidden">چرا HealthPlus ؟</p>
             </div>
 
             <div className="mt-[9px] flex flex-col gap-[9px] customMd:mt-[68px] customMd:flex-row customMd:gap-[23px]">
@@ -23,8 +23,8 @@ function WhyUs() {
                 customMd:flex-1 customMd:flex-col-reverse customMd:items-center customMd:rounded-[19px] customMd:p-[23px] customMd:pt-0"
                >
                   <div className="max-customMd:max-w-[150px]">
-                     <p className="text-sm text-[#404040] customMd:text-center customMd:text-eighteen">امنیت بالا</p>
-                     <p className="mt-[9px] text-10 leading-4 text-[#40404080] customMd:text-center customMd:text-base">
+                     <p className="text-sm text-textColor1 customMd:text-center customMd:text-eighteen">امنیت بالا</p>
+                     <p className="mt-[9px] text-10 leading-4 text-textColor2 customMd:text-center customMd:text-base">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
                      </p>
                   </div>
@@ -37,10 +37,10 @@ function WhyUs() {
                 customMd:flex-1 customMd:flex-col-reverse customMd:items-center customMd:rounded-[19px] customMd:p-[23px] customMd:pt-0"
                >
                   <div className="max-customMd:max-w-[150px]">
-                     <p className="text-sm text-[#404040] customMd:text-center customMd:text-eighteen">
+                     <p className="text-sm text-textColor1 customMd:text-center customMd:text-eighteen">
                         مشاورین و پزشکان مجرب
                      </p>
-                     <p className="mt-[9px] text-10 leading-4 text-[#40404080] customMd:text-center customMd:text-base">
+                     <p className="mt-[9px] text-10 leading-4 text-textColor2 customMd:text-center customMd:text-base">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
                      </p>
                   </div>
@@ -53,10 +53,10 @@ function WhyUs() {
                 customMd:flex-1 customMd:flex-col-reverse customMd:items-center customMd:rounded-[19px] customMd:p-[23px] customMd:pt-0"
                >
                   <div className="max-customMd:max-w-[150px]">
-                     <p className="text-sm text-[#404040] customMd:text-center customMd:text-eighteen">
+                     <p className="text-sm text-textColor1 customMd:text-center customMd:text-eighteen">
                         مشاورین و پزشکان مجرب
                      </p>
-                     <p className="mt-[9px] text-10 leading-4 text-[#40404080] customMd:text-center customMd:text-base">
+                     <p className="mt-[9px] text-10 leading-4 text-textColor2 customMd:text-center customMd:text-base">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
                      </p>
                   </div>

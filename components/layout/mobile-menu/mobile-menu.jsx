@@ -47,43 +47,43 @@ function MobileMenu({ open, onClose }) {
                   }
                >
                   <div className="mt-2 flex flex-col gap-4">
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         متخصص زنان و زایمان
                      </Link>
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         متخصص داخلی
                      </Link>
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         متخصص قلب و عروق
                      </Link>
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         متخصص پوست و مو
                      </Link>
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         متخصص روانپزشک
                      </Link>
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         متخصص جراج
                      </Link>
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         متخصص دندانپزشک
                      </Link>
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         متخصص مغز و اعصاب
                      </Link>
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         متخصص تغذیه
                      </Link>
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/online-medical-advice" className="text-xs text-textColor2">
                         مشاهده تمام تخصص ها
                      </Link>
                   </div>
                </MobileMenuAccordion>
-               <Link href="/" className="flex items-center gap-[5px] text-xs text-[#404040]">
+               <Link href="/" className="flex items-center gap-[5px] text-xs text-textColor1">
                   <BiBookmarkAltPlus className="text-base" color="#2ED7FE80" />
                   نوبت دهی
                </Link>
-               <Link href="/" className="flex items-center gap-[5px] text-xs text-[#404040]">
+               <Link href="/" className="flex items-center gap-[5px] text-xs text-textColor1">
                   <GiMedicines className="text-base" color="#2ED7FE80" />
                   داروخانه
                </Link>
@@ -97,18 +97,18 @@ function MobileMenu({ open, onClose }) {
                   }
                >
                   <div className="mt-2 flex flex-col gap-4">
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         ویزیت پزشک در منزل
                      </Link>
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         آزمایش در منزل
                      </Link>
-                     <Link href="/" className="text-xs text-[#40404080]">
+                     <Link href="/" className="text-xs text-textColor2">
                         پرستاری در منزل
                      </Link>
                   </div>
                </MobileMenuAccordion>
-               <Link href="/" className="flex items-center gap-[5px] text-xs text-[#404040]">
+               <Link href="/" className="flex items-center gap-[5px] text-xs text-textColor1">
                   <IoDocumentTextOutline className="text-base" color="#2ED7FE80" />
                   مجله سلامت
                </Link>
