@@ -42,6 +42,7 @@ module.exports = {
             kalamehBold700: 'kalamehBold700',
             kalamehExtraBold800: 'kalamehExtraBold800',
             kalamehBlack900: 'kalamehBlack900',
+            DanaFaNum: 'DanaFaNum',
          },
          borderRadius: {
             10: '10px',

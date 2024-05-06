@@ -13,7 +13,7 @@ import { BiHomeAlt } from 'react-icons/bi';
 // Assets
 import doctorProfileSample from '@/assets/images/doctorProfileSample.png';
 
-function DoctorCard() {
+function DoctorCard({ buttonsType }) {
    return (
       <div className="rounded-10 border border-solid border-secondaryBlue p-15 customMd:p-5">
          <div className="flex flex-col customMd:flex-row customMd:items-center customMd:justify-between">
@@ -97,28 +97,46 @@ function DoctorCard() {
                   </div>
                </div>
             </div>
-            <div className="flex items-center gap-[14px] max-customMd:mt-[30px]">
-               <Button
-                  variant="outlined"
-                  className="max-customMd:flex-1 customMd:w-[135px]"
-                  sx={{ height: '40px', borderRadius: '5px', fontFamily: 'kalamehSemiBold600', fontSize: '15px' }}
-               >
-                  نوبت دهی
-               </Button>
-               <Button
-                  variant="contained"
-                  className="max-customMd:flex-1 customMd:w-[135px]"
-                  sx={{
-                     height: '40px',
-                     borderRadius: '5px',
-                     fontFamily: 'kalamehSemiBold600',
-                     fontSize: '15px',
-                     color: '#fff',
-                  }}
-               >
-                  رزرو مشاوره
-               </Button>
-            </div>
+            {buttonsType === 1 ? (
+               <div className="flex items-center gap-[14px] max-customMd:mt-[30px]">
+                  <Button
+                     variant="outlined"
+                     className="max-customMd:flex-1 customMd:w-[135px]"
+                     sx={{ height: '40px', borderRadius: '5px', fontFamily: 'kalamehSemiBold600', fontSize: '15px' }}
+                  >
+                     نوبت دهی
+                  </Button>
+                  <Button
+                     variant="contained"
+                     className="max-customMd:flex-1 customMd:w-[135px]"
+                     sx={{
+                        height: '40px',
+                        borderRadius: '5px',
+                        fontFamily: 'kalamehSemiBold600',
+                        fontSize: '15px',
+                        color: '#fff',
+                     }}
+                  >
+                     رزرو مشاوره
+                  </Button>
+               </div>
+            ) : buttonsType === 2 ? (
+               <div className="max-customMd:mt-[30px]">
+                  <Button
+                     variant="contained"
+                     className="max-customMd:w-full customMd:w-[135px]"
+                     sx={{
+                        height: '40px',
+                        borderRadius: '5px',
+                        fontFamily: 'kalamehSemiBold600',
+                        fontSize: '15px',
+                        color: '#fff',
+                     }}
+                  >
+                     نوبت بگیرید
+                  </Button>
+               </div>
+            ) : null}
          </div>
       </div>
    );

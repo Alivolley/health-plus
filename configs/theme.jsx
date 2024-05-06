@@ -74,25 +74,14 @@ const getDesignTokens = mode => ({
          },
       },
 
-      MuiTextField: {
-         styleOverrides: {
-            root: props => ({
-               // '& .MuiOutlinedInput-root': {
-               //    ...(props?.size === 'small' && {
-               //       height: '45px',
-               //       borderRadius: '47px',
-               //    }),
-               // },
-            }),
-         },
-      },
-
       MuiPaginationItem: {
          styleOverrides: {
             root: {
                backgroundColor: '#2ED7FE0D',
                border: 'none',
                color: '#2ED7FE',
+               fontFamily: 'DanaFaNum',
+
                '&.Mui-selected': {
                   backgroundColor: '#2ED7FE',
                   color: '#fff',

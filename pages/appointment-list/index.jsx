@@ -20,7 +20,7 @@ const filterBtnStyle = {
    lineHeight: '12px',
 };
 
-function FilterMedicalAdvice() {
+function AppointmentList() {
    const [sortingValue, setSortingValue] = useState('');
    const [showFilterMobile, setShowFilterMobile] = useState(false);
    const [showSortingMobile, setShowSortingMobile] = useState(false);
@@ -59,18 +59,11 @@ function FilterMedicalAdvice() {
                      صفحه اصلی
                   </Link>,
                   <Link
-                     href="/online-medical-advice"
+                     href="/appointment-list"
                      key={2}
                      className="text-15 text-textColor2 transition-all duration-200 hover:text-black hover:underline"
                   >
-                     مشاوره پزشکی آنلاین
-                  </Link>,
-                  <Link
-                     href="/filter-medical-advice"
-                     key={2}
-                     className="text-15 text-textColor2 transition-all duration-200 hover:text-black hover:underline"
-                  >
-                     متخصص کودکان
+                     نوبت دهی
                   </Link>,
                ]}
             </Breadcrumbs>
@@ -81,12 +74,10 @@ function FilterMedicalAdvice() {
                }}
             >
                <p className="text-[20px] leading-8 text-primaryBlue max-customMd:text-center">
-                  مشاوره پزشکی و آنلاین از متخصص کودکان
+                  نوبت دهی آنلاین در هلث پلاس
                </p>
                <p className="mt-15 text-15 leading-7 text-textColor2 max-customMd:hidden">
-                  با هلث پلاس می‌توانید ۲۴ ساعته و از همه جای دنیا مشاوره پزشکی و مشاوره روانشناسی بگیرید. هلث پلاس به
-                  صورت تخصصی و با حفظ حریم خصوصی، اقدام به ارایه مشاوره آنلاین و مشاوره تلفنی و مشاوره ویدئویی در
-                  زمینه‌ی بهترین متخصص کودک و نوزاد کرده است.
+                  درخواست نوبت آنلاین از بهترین متخصصین در وبسایت هلث پلاس
                </p>
             </div>
 
@@ -97,9 +88,9 @@ function FilterMedicalAdvice() {
                <div className="grow">
                   <p
                      className="rounded-10 border border-solid border-borderColor p-4 text-15 leading-3
-                   text-textColor2 max-customMd:text-center customMd:p-5 customMd:text-xl customMd:leading-4"
+              text-textColor2 max-customMd:text-center customMd:p-5 customMd:text-xl customMd:leading-4"
                   >
-                     لیست بهترین متخصص کودکان
+                     درخواست نوبت دهی آنلاین‌
                   </p>
 
                   <div className="mt-15 flex items-center gap-5 customLg:hidden">
@@ -112,7 +103,7 @@ function FilterMedicalAdvice() {
                   </div>
                   <div
                      className="mt-5 hidden items-center gap-[60px] rounded-10 border border-solid
-                   border-borderColor px-5 customMd:flex"
+              border-borderColor px-5 customMd:flex"
                   >
                      <p className="whitespace-nowrap text-xl leading-4 text-secondaryBlue">ترتیب نمایش</p>
                      <div>
@@ -141,13 +132,13 @@ function FilterMedicalAdvice() {
                      </div>
                   </div>
                   <div className="mt-15 space-y-[15px] customMd:mt-[30px] customMd:space-y-[30px]">
-                     <DoctorCard buttonsType={1} />
-                     <DoctorCard buttonsType={1} />
-                     <DoctorCard buttonsType={1} />
-                     <DoctorCard buttonsType={1} />
-                     <DoctorCard buttonsType={1} />
-                     <DoctorCard buttonsType={1} />
-                     <DoctorCard buttonsType={1} />
+                     <DoctorCard buttonsType={2} />
+                     <DoctorCard buttonsType={2} />
+                     <DoctorCard buttonsType={2} />
+                     <DoctorCard buttonsType={2} />
+                     <DoctorCard buttonsType={2} />
+                     <DoctorCard buttonsType={2} />
+                     <DoctorCard buttonsType={2} />
                   </div>
 
                   <div className="mt-[30px] flex  justify-center customMd:mt-[60px] customMd:justify-end">
@@ -170,4 +161,4 @@ function FilterMedicalAdvice() {
    );
 }
 
-export default FilterMedicalAdvice;
+export default AppointmentList;

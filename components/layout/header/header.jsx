@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -22,6 +23,8 @@ import MobileMenu from '../mobile-menu/mobile-menu';
 function Header() {
    const [showMobileMenu, setShowMobileMenu] = useState(false);
 
+   const { pathname } = useRouter();
+
    const formSubmitHandler = e => {
       e.preventDefault();
    };
@@ -37,10 +40,12 @@ function Header() {
                   <div className="flex items-center gap-3 xl:gap-[37.5px]">
                      <div id="dropdownWrapper">
                         <div
-                           className="flex items-center gap-1 text-15 text-textColor2 transition-all duration-200"
+                           className={`flex items-center gap-1 text-15 transition-all duration-200 ${
+                              pathname.startsWith('/filter-medical-advice') ? 'text-primaryBlue' : 'text-textColor2'
+                           }`}
                            id="dropdownText"
                         >
-                           مشاور آنلاین
+                           مشاوره آنلاین
                            <MdOutlineKeyboardArrowDown id="dropdownArrow" className="transition-all duration-200" />
                         </div>
                         <div
@@ -119,7 +124,12 @@ function Header() {
                            </Link>
                         </div>
                      </div>
-                     <Link href="/" className="text-15 text-textColor2">
+                     <Link
+                        href="/appointment-list"
+                        className={`text-15 ${
+                           pathname.startsWith('/appointment-list') ? 'text-primaryBlue' : 'text-textColor2'
+                        }`}
+                     >
                         نوبت دهی
                      </Link>
                      <Link href="/" className="text-15 text-textColor2">

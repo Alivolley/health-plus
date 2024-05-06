@@ -39,6 +39,10 @@
       font-family: 'kalamehBlack900';
       src: url('../assets/fonts/Kalameh-Black900.ttf') format('truetype');
    }
+   @font-face {
+      font-family: 'DanaFaNum';
+      src: url('../assets/fonts/DanaFaNum-Regular.ttf') format('truetype');
+   }
 
    html {
       scroll-behavior: smooth;
