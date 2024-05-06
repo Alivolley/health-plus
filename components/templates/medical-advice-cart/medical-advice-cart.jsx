@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 // MUI
@@ -9,7 +10,8 @@ import doctorProfileSample from '@/assets/images/doctorProfileSample.png';
 
 function MedicalAdviceCart() {
    return (
-      <div
+      <Link
+         href="/filter-medical-advice"
          className="flex flex-col gap-[14px] rounded-10 bg-white px-[10px] pb-[10px] pt-15
           customMd:flex-row customMd:items-center customMd:gap-[19px] customMd:rounded-[25px] customMd:p-[30px]"
          style={{ boxShadow: '0px 0px 15px 0px #0000000D' }}
@@ -59,7 +61,7 @@ function MedicalAdviceCart() {
                </div>
             </div>
          </div>
-      </div>
+      </Link>
    );
 }
 

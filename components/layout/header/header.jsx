@@ -45,76 +45,76 @@ function Header() {
                         </div>
                         <div
                            id="dropdownBox"
-                           className="flex flex-col gap-5 rounded-10 border border-solid border-[#2ED7FE80] bg-white p-5"
+                           className="flex flex-col gap-5 rounded-10 border border-solid border-secondaryBlue bg-white p-5"
                         >
                            <Link
-                              href="/"
+                              href="/filter-medical-advice"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               متخصص زنان و زایمان
                            </Link>
                            <Link
-                              href="/"
+                              href="/filter-medical-advice"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               متخصص داخلی
                            </Link>
                            <Link
-                              href="/"
+                              href="/filter-medical-advice"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               متخصص قلب و عروق
                            </Link>
                            <Link
-                              href="/"
+                              href="/filter-medical-advice"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               متخصص پوست و مو
                            </Link>
                            <Link
-                              href="/"
+                              href="/filter-medical-advice"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               متخصص روانپزشک
                            </Link>
                            <Link
-                              href="/"
+                              href="/filter-medical-advice"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               متخصص جراج
                            </Link>
                            <Link
-                              href="/"
+                              href="/filter-medical-advice"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               متخصص دندانپزشک
                            </Link>
                            <Link
-                              href="/"
+                              href="/filter-medical-advice"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               متخصص مغز و اعصاب
                            </Link>
                            <Link
-                              href="/"
+                              href="/filter-medical-advice"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               متخصص تغذیه
                            </Link>
                            <Link
                               href="/online-medical-advice"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               مشاهده تمام تخصص ها
                            </Link>
                         </div>
@@ -135,27 +135,27 @@ function Header() {
                         </div>
                         <div
                            id="dropdownBox"
-                           className="flex flex-col gap-5 rounded-10 border border-solid border-[#2ED7FE80] bg-white p-5"
+                           className="flex flex-col gap-5 rounded-10 border border-solid border-secondaryBlue bg-white p-5"
                         >
                            <Link
                               href="/"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               ویزیت پزشک در منزل
                            </Link>
                            <Link
                               href="/"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               آزمایش در منزل
                            </Link>
                            <Link
                               href="/"
                               className="flex items-center gap-[5px] whitespace-nowrap text-textColor2 transition-all duration-200 hover:text-primaryBlue"
                            >
-                              <span className="mt-1 size-[5px] rounded-full bg-[#2ED7FE80]" />
+                              <span className="mt-1 size-[5px] rounded-full bg-secondaryBlue" />
                               پرستاری در منزل
                            </Link>
                         </div>

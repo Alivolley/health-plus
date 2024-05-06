@@ -60,6 +60,20 @@ const getDesignTokens = mode => ({
          },
       },
 
+      MuiTab: {
+         styleOverrides: {
+            root: props => ({
+               ...(props['aria-selected']
+                  ? {
+                       color: '#404040 !important',
+                    }
+                  : {
+                       color: '#40404080 !important',
+                    }),
+            }),
+         },
+      },
+
       MuiTextField: {
          styleOverrides: {
             root: props => ({
@@ -70,6 +84,20 @@ const getDesignTokens = mode => ({
                //    }),
                // },
             }),
+         },
+      },
+
+      MuiPaginationItem: {
+         styleOverrides: {
+            root: {
+               backgroundColor: '#2ED7FE0D',
+               border: 'none',
+               color: '#2ED7FE',
+               '&.Mui-selected': {
+                  backgroundColor: '#2ED7FE',
+                  color: '#fff',
+               },
+            },
          },
       },
    },

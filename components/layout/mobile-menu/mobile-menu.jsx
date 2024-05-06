@@ -47,31 +47,31 @@ function MobileMenu({ open, onClose }) {
                   }
                >
                   <div className="mt-2 flex flex-col gap-4">
-                     <Link href="/" className="text-xs text-textColor2">
+                     <Link href="/filter-medical-advice" className="text-xs text-textColor2">
                         متخصص زنان و زایمان
                      </Link>
-                     <Link href="/" className="text-xs text-textColor2">
+                     <Link href="/filter-medical-advice" className="text-xs text-textColor2">
                         متخصص داخلی
                      </Link>
-                     <Link href="/" className="text-xs text-textColor2">
+                     <Link href="/filter-medical-advice" className="text-xs text-textColor2">
                         متخصص قلب و عروق
                      </Link>
-                     <Link href="/" className="text-xs text-textColor2">
+                     <Link href="/filter-medical-advice" className="text-xs text-textColor2">
                         متخصص پوست و مو
                      </Link>
-                     <Link href="/" className="text-xs text-textColor2">
+                     <Link href="/filter-medical-advice" className="text-xs text-textColor2">
                         متخصص روانپزشک
                      </Link>
-                     <Link href="/" className="text-xs text-textColor2">
+                     <Link href="/filter-medical-advice" className="text-xs text-textColor2">
                         متخصص جراج
                      </Link>
-                     <Link href="/" className="text-xs text-textColor2">
+                     <Link href="/filter-medical-advice" className="text-xs text-textColor2">
                         متخصص دندانپزشک
                      </Link>
-                     <Link href="/" className="text-xs text-textColor2">
+                     <Link href="/filter-medical-advice" className="text-xs text-textColor2">
                         متخصص مغز و اعصاب
                      </Link>
-                     <Link href="/" className="text-xs text-textColor2">
+                     <Link href="/filter-medical-advice" className="text-xs text-textColor2">
                         متخصص تغذیه
                      </Link>
                      <Link href="/online-medical-advice" className="text-xs text-textColor2">
