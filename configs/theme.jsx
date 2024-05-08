@@ -33,6 +33,7 @@ const getDesignTokens = mode => ({
          styleOverrides: {
             root: {
                fontFamily: 'kalamehMedium500',
+               '& .MuiDialog-container': { alignItems: 'start' },
             },
          },
       },

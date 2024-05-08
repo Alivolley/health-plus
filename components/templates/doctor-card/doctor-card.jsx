@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 // MUI
 import { Button } from '@mui/material';
@@ -106,19 +107,21 @@ function DoctorCard({ buttonsType }) {
                   >
                      نوبت دهی
                   </Button>
-                  <Button
-                     variant="contained"
-                     className="max-customMd:flex-1 customMd:w-[135px]"
-                     sx={{
-                        height: '40px',
-                        borderRadius: '5px',
-                        fontFamily: 'kalamehSemiBold600',
-                        fontSize: '15px',
-                        color: '#fff',
-                     }}
-                  >
-                     رزرو مشاوره
-                  </Button>
+                  <Link href="/doctor-medical-advice/mansoori">
+                     <Button
+                        variant="contained"
+                        className="max-customMd:flex-1 customMd:w-[135px]"
+                        sx={{
+                           height: '40px',
+                           borderRadius: '5px',
+                           fontFamily: 'kalamehSemiBold600',
+                           fontSize: '15px',
+                           color: '#fff',
+                        }}
+                     >
+                        رزرو مشاوره
+                     </Button>
+                  </Link>
                </div>
             ) : buttonsType === 2 ? (
                <div className="max-customMd:mt-[30px]">
