@@ -100,17 +100,19 @@ function DoctorCard({ buttonsType }) {
             </div>
             {buttonsType === 1 ? (
                <div className="flex items-center gap-[14px] max-customMd:mt-[30px]">
-                  <Button
-                     variant="outlined"
-                     className="max-customMd:flex-1 customMd:w-[135px]"
-                     sx={{ height: '40px', borderRadius: '5px', fontFamily: 'kalamehSemiBold600', fontSize: '15px' }}
-                  >
-                     نوبت دهی
-                  </Button>
-                  <Link href="/doctor-medical-advice/mansoori">
+                  <Link href="/doctor-appointment/mansoori" className="block max-customMd:flex-1 customMd:w-[135px]">
+                     <Button
+                        variant="outlined"
+                        fullWidth
+                        sx={{ height: '40px', borderRadius: '5px', fontFamily: 'kalamehSemiBold600', fontSize: '15px' }}
+                     >
+                        نوبت دهی
+                     </Button>
+                  </Link>
+                  <Link href="/doctor-medical-advice/mansoori" className="block max-customMd:flex-1 customMd:w-[135px]">
                      <Button
                         variant="contained"
-                        className="max-customMd:flex-1 customMd:w-[135px]"
+                        fullWidth
                         sx={{
                            height: '40px',
                            borderRadius: '5px',
@@ -124,7 +126,7 @@ function DoctorCard({ buttonsType }) {
                   </Link>
                </div>
             ) : buttonsType === 2 ? (
-               <div className="max-customMd:mt-[30px]">
+               <Link href="/doctor-appointment/mansoori" className="block max-customMd:mt-[30px]">
                   <Button
                      variant="contained"
                      className="max-customMd:w-full customMd:w-[135px]"
@@ -138,7 +140,7 @@ function DoctorCard({ buttonsType }) {
                   >
                      نوبت بگیرید
                   </Button>
-               </div>
+               </Link>
             ) : null}
          </div>
       </div>

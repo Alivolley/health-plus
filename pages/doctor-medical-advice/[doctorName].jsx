@@ -1,10 +1,11 @@
-// import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+// import { useRouter } from 'next/router';
 
 // MUI
 import { Breadcrumbs, Button, Dialog, Grid, IconButton } from '@mui/material';
+import { LoadingButton } from '@mui/lab';
 
 // Icons
 import { IoLocation } from 'react-icons/io5';
@@ -19,7 +20,6 @@ import { HiShieldCheck } from 'react-icons/hi2';
 import { LiaComment } from 'react-icons/lia';
 
 // Assets
-import { LoadingButton } from '@mui/lab';
 import doctorProfileSample from '@/assets/images/doctorProfileSample.png';
 
 // Components
@@ -208,7 +208,7 @@ function DoctorMedicalAdvice() {
                            </div>
                         </div>
 
-                        <div className="max-customMd:mt-[30px]">
+                        <Link href="/doctor-appointment/mansoori" className="max-customMd:mt-[30px]">
                            <Button
                               variant="contained"
                               className="max-customMd:w-full customMd:w-[135px]"
@@ -222,7 +222,7 @@ function DoctorMedicalAdvice() {
                            >
                               نوبت دهی
                            </Button>
-                        </div>
+                        </Link>
                      </div>
                   </div>
 
