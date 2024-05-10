@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 // MUI
-import { Breadcrumbs, Button } from '@mui/material';
+import { Breadcrumbs, Button, Dialog, IconButton } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
 
 // Icons
@@ -17,6 +17,7 @@ import { PiHandHeartBold } from 'react-icons/pi';
 import { IoMdArrowForward, IoMdArrowBack } from 'react-icons/io';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { LiaComment } from 'react-icons/lia';
+import { GrFormClose } from 'react-icons/gr';
 
 // Assets
 import doctorProfileSample from '@/assets/images/doctorProfileSample.png';
@@ -37,7 +38,10 @@ const filterBtnStyle = {
 
 function DoctorAppointment() {
    const [boxSize, setBoxSize] = useState('150');
+   const [showFilterMobile, setShowFilterMobile] = useState(false);
    const [selectedDate, setSelectedDate] = useState(1);
+   const [showAboutDoctorModal, setShowAboutDoctorModal] = useState(false);
+   const [showOfficeStuffModal, setShowOfficeStuffModal] = useState(false);
    const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
 
    const boxRef = useRef(null);
@@ -142,14 +146,14 @@ function DoctorAppointment() {
                      شماره نظام پزشکی ۱۲۳۴۵۶
                   </p>
 
-                  <div className="mt-15 flex items-center gap-5 customLg:hidden">
-                     <Button className="flex-1" sx={filterBtnStyle}>
-                        مشاوره متنی
-                     </Button>
-                     <Button className="flex-1" sx={filterBtnStyle}>
-                        مشاوره تلفنی
-                     </Button>
-                  </div>
+                  <Button
+                     className="!mt-15 customLg:!hidden"
+                     fullWidth
+                     sx={filterBtnStyle}
+                     onClick={() => setShowFilterMobile(true)}
+                  >
+                     فیلتر ها
+                  </Button>
 
                   <div
                      className="rounded-10 border border-solid border-secondaryBlue p-15 max-customMd:mt-15 customMd:p-5"
@@ -294,6 +298,7 @@ function DoctorAppointment() {
                         className="flex-1"
                         sx={filterBtnStyle}
                         startIcon={<FaUserDoctor color="#2ED7FE" size="15px" />}
+                        onClick={() => setShowAboutDoctorModal(true)}
                      >
                         درباره پزشک
                      </Button>
@@ -301,6 +306,7 @@ function DoctorAppointment() {
                         className="flex-1"
                         sx={filterBtnStyle}
                         startIcon={<PiHandHeartBold color="#2ED7FE" size="15px" />}
+                        onClick={() => setShowOfficeStuffModal(true)}
                      >
                         ملاحضات مطب
                      </Button>
@@ -661,6 +667,65 @@ function DoctorAppointment() {
                </div>
             </div>
          </div>
+
+         <Dialog open={showFilterMobile} onClose={() => setShowFilterMobile(false)} dir="rtl">
+            <div className="rounded-10">
+               <MedicalAdviceAside onClose={() => setShowFilterMobile(false)} />
+            </div>
+         </Dialog>
+
+         <Dialog open={showAboutDoctorModal} onClose={() => setShowAboutDoctorModal(false)} dir="rtl">
+            <div className="rounded-10 p-[30px]">
+               <div className="flex justify-end">
+                  <IconButton
+                     sx={{ width: '25px', height: '25px', backgroundColor: '#2ED7FE80', padding: 0 }}
+                     onClick={() => setShowAboutDoctorModal(false)}
+                  >
+                     <GrFormClose size="20px" color="#000" />
+                  </IconButton>
+               </div>
+
+               <div className="mt-[10]">
+                  <div className="flex gap-2">
+                     <FaUserDoctor color="#2ED7FE" size="20px" />
+                     <p className="text-lg text-textColor3">درباره پزشک</p>
+                  </div>
+                  <div className="mt-15 flex items-center gap-1 text-sm text-textColor2">
+                     <p>شماره نظام پزشکی : </p>
+                     <p className="font-DanaFaNum font-bold">123456</p>
+                  </div>
+                  <p className="mt-[10px] max-w-[450px] text-sm text-textColor2">
+                     متخصص کودکان و نوزادان دارای بورد تخصصی از دانشگاه شهید بهشتی و ... مشاوره در زمینه های زردی
+                     نوزادان ،تغذیه،ریفلاکس و کولیک وآلرژی... درمان بیماری‌های تنفسی ،گوارشی ،عفونی ...
+                  </p>
+               </div>
+            </div>
+         </Dialog>
+
+         <Dialog open={showOfficeStuffModal} onClose={() => setShowOfficeStuffModal(false)} dir="rtl">
+            <div className="rounded-10 p-[30px]">
+               <div className="flex justify-end">
+                  <IconButton
+                     sx={{ width: '25px', height: '25px', backgroundColor: '#2ED7FE80', padding: 0 }}
+                     onClick={() => setShowOfficeStuffModal(false)}
+                  >
+                     <GrFormClose size="20px" color="#000" />
+                  </IconButton>
+               </div>
+
+               <div className="mt-[10]">
+                  <div className="flex gap-2">
+                     <PiHandHeartBold color="#2ED7FE" size="20px" />
+                     <p className="text-lg text-textColor3">ملاحضات مطب</p>
+                  </div>
+                  <p className="mt-15 max-w-[450px] text-sm text-textColor2">
+                     متخصص کودکان و نوزادان دارای بورد تخصصی از دانشگاه شهید بهشتی و ... مشاوره در زمینه های زردی
+                     نوزادان ،تغذیه،ریفلاکس و کولیک وآلرژی... درمان بیماری‌های تنفسی ،گوارشی ،عفونی ... نوزادان
+                     ،تغذیه،ریفلاکس و کولیک وآلرژی... درمان بیماری‌های تنفسی ،گوارشی ،عفونی ...
+                  </p>
+               </div>
+            </div>
+         </Dialog>
       </div>
    );
 }
