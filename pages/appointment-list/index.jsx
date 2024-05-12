@@ -148,13 +148,13 @@ function AppointmentList() {
             </div>
          </div>
 
-         <Dialog open={showFilterMobile} onClose={() => setShowFilterMobile(false)} dir="rtl">
+         <Dialog open={showFilterMobile} onClose={() => setShowFilterMobile(false)} dir="rtl" top>
             <div className="rounded-10">
                <MedicalAdviceAside onClose={() => setShowFilterMobile(false)} />
             </div>
          </Dialog>
 
-         <Dialog open={showSortingMobile} onClose={() => setShowSortingMobile(false)} dir="rtl">
+         <Dialog open={showSortingMobile} onClose={() => setShowSortingMobile(false)} dir="rtl" top>
             <MobileSortingModal setShowSortingMobile={setShowSortingMobile} />
          </Dialog>
       </div>

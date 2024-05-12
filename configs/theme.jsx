@@ -31,10 +31,10 @@ const getDesignTokens = mode => ({
 
       MuiDialog: {
          styleOverrides: {
-            root: {
+            root: props => ({
                fontFamily: 'kalamehMedium500',
-               '& .MuiDialog-container': { alignItems: 'start' },
-            },
+               ...(props.top && { '& .MuiDialog-container': { alignItems: 'start' } }),
+            }),
          },
       },
 

@@ -39,7 +39,8 @@ function Header() {
                   </Link>
                   <div className="flex items-center gap-3 xl:gap-[37.5px]">
                      <div id="dropdownWrapper">
-                        <div
+                        <Link
+                           href="/filter-medical-advice"
                            className={`flex items-center gap-1 text-15 transition-all duration-200 ${
                               pathname.startsWith('/filter-medical-advice') ? 'text-primaryBlue' : 'text-textColor2'
                            }`}
@@ -47,7 +48,7 @@ function Header() {
                         >
                            مشاوره آنلاین
                            <MdOutlineKeyboardArrowDown id="dropdownArrow" className="transition-all duration-200" />
-                        </div>
+                        </Link>
                         <div
                            id="dropdownBox"
                            className="flex flex-col gap-5 rounded-10 border border-solid border-secondaryBlue bg-white p-5"
@@ -126,23 +127,29 @@ function Header() {
                      </div>
                      <Link
                         href="/appointment-list"
-                        className={`text-15 ${
+                        className={`text-15 transition-all duration-200 hover:text-primaryBlue ${
                            pathname.startsWith('/appointment-list') ? 'text-primaryBlue' : 'text-textColor2'
                         }`}
                      >
                         نوبت دهی
                      </Link>
-                     <Link href="/" className="text-15 text-textColor2">
+                     <Link
+                        href="/"
+                        className="text-15 text-textColor2 transition-all duration-200 hover:text-primaryBlue"
+                     >
                         داروخانه
                      </Link>
                      <div id="dropdownWrapper">
-                        <div
-                           className="flex items-center gap-1 text-15 text-textColor2 transition-all duration-200"
+                        <Link
+                           href="/visit-at-home"
+                           className={`flex items-center gap-1 text-15 transition-all duration-200  ${
+                              pathname.startsWith('/visit-at-home') ? 'text-primaryBlue' : 'text-textColor2'
+                           }`}
                            id="dropdownText"
                         >
                            پزشک در منزل
                            <MdOutlineKeyboardArrowDown id="dropdownArrow" className="transition-all duration-200" />
-                        </div>
+                        </Link>
                         <div
                            id="dropdownBox"
                            className="flex flex-col gap-5 rounded-10 border border-solid border-secondaryBlue bg-white p-5"
@@ -170,7 +177,10 @@ function Header() {
                            </Link>
                         </div>
                      </div>
-                     <Link href="/" className="text-15 text-textColor2">
+                     <Link
+                        href="/"
+                        className="text-15 text-textColor2 transition-all duration-200 hover:text-primaryBlue"
+                     >
                         مجله سلامت
                      </Link>
                   </div>

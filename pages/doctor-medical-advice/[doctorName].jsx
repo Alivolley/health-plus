@@ -380,11 +380,11 @@ function DoctorMedicalAdvice() {
             </div>
          </div>
 
-         <Dialog open={showPhoneConsultationModal} onClose={() => setShowPhoneConsultationModal(false)} dir="rtl">
+         <Dialog open={showPhoneConsultationModal} onClose={() => setShowPhoneConsultationModal(false)} dir="rtl" top>
             <PhoneConsultation onClose={() => setShowPhoneConsultationModal(false)} />
          </Dialog>
 
-         <Dialog open={showTextConsultationModal} onClose={() => setShowTextConsultationModal(false)} dir="rtl">
+         <Dialog open={showTextConsultationModal} onClose={() => setShowTextConsultationModal(false)} dir="rtl" top>
             <TextConsultation onClose={() => setShowTextConsultationModal(false)} />
          </Dialog>
       </div>
