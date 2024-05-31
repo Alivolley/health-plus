@@ -134,8 +134,10 @@ function Header() {
                         نوبت دهی
                      </Link>
                      <Link
-                        href="/"
-                        className="text-15 text-textColor2 transition-all duration-200 hover:text-primaryBlue"
+                        href="/pharmacy"
+                        className={`text-15 transition-all duration-200 hover:text-primaryBlue ${
+                           pathname.startsWith('/pharmacy') ? 'text-primaryBlue' : 'text-textColor2'
+                        }`}
                      >
                         داروخانه
                      </Link>

@@ -93,7 +93,7 @@ function Footer() {
                               <Link href="/" className="transition-all duration-200 hover:text-primaryBlue">
                                  قلب و عروق
                               </Link>
-                              <Link href="/" className="transition-all duration-200 hover:text-primaryBlue">
+                              <Link href="/pharmacy" className="transition-all duration-200 hover:text-primaryBlue">
                                  داروخانه
                               </Link>
                               <Link href="/" className="transition-all duration-200 hover:text-primaryBlue">

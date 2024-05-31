@@ -83,7 +83,7 @@ function MobileMenu({ open, onClose }) {
                   <BiBookmarkAltPlus className="text-base" color="#2ED7FE80" />
                   نوبت دهی
                </Link>
-               <Link href="/" className="flex items-center gap-[5px] text-xs text-textColor1">
+               <Link href="/pharmacy" className="flex items-center gap-[5px] text-xs text-textColor1">
                   <GiMedicines className="text-base" color="#2ED7FE80" />
                   داروخانه
                </Link>
